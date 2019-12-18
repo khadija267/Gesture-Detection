@@ -2,10 +2,11 @@
 % cam = webcam(1);
 % img= snapshot(cam);
 % clear cam;
-img=imread('5.jpg');
-% [fname,fpath]=uigetfile('.jpg','choose image');
-% img_fullpath=[fpath,fname];
-% img=imread(img_fullpath);
+% img=imread('5.jpg');
+%to make user choose the images from directory
+[fname,fpath]=uigetfile('.jpg','choose image');
+img_fullpath=[fpath,fname];
+img=imread(img_fullpath);
 YCBCR = rgb2ycbcr(img);
 ii=imresize(YCBCR, [128 128]);
 s = strel('ball',2,2);
