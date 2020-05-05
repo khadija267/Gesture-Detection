@@ -1,2 +1,2 @@
-# image-processing-collage-course
+# Gesture Detection
 simple matlab code for webcam captured images (with white background) enhamcement and segmentation then to recognize fingers count
